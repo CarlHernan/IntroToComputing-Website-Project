@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="IMG/logo.png"></link>
+    <link rel="stylesheet" href="CSS/profiling.css">
+    <link rel="stylesheet" href="CSS/about.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"></script>
+    <title>Malongon | Official Website</title>
+</head>
+<body id="body">
+    <label for="check"><div class="overlay" onclick="closeNAV()" id="overlay"></div></label>
+    <section class="section-1">
+        <div class="blue-strip">
+            <p><span>Open Hours of Barangay Malongon</span>MON - FRI: 8:00 am - 6:00 pm</p>
+        </div>
+        <nav class="navbar">
+            <div class="nav-wrapper"> 
+                <img src="IMG/logo.png" alt="Logo" class="logo">
+                <button class="get-in-touch" id="random">
+                    <a href="https://www.facebook.com/profile.php?id=100080792927206">Get In Touch
+                    <span>→</span></a>
+                </button>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li>
+                        <a href="#">Services<i class="fas fa-angle-down"></i></a>
+                        <ul  class="nav-dropdown">
+                            <li><a href="certificates.html">Certificates</a></li>
+                            <li class="profile"><a href="#">Profiles</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                
+                </ul>
+            </div>  
+        </nav>
+        <div class="header-1">
+            <div class="header-1-flex">
+                <div class="header-container">
+                    <div class="header-wrapper">
+                        <h1>Profile Registration</h1>
+                    </div>
+                    <div class="sub-header">
+                        <a href="index.html"><h5>Home</h5></a><span>┃</span>
+                        <a href="#"><h5 id="sub-text">Services</h5></a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="mobile-nav">
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn" onclick="openNAV()">
+                <i class="fas fa-bars"></i>                      
+            </label>
+            
+            <ul>
+                <label for="check" class="checkbtnX" onclick="closeNAV()">
+                    <i class="fa-solid fa-xmark"></i>                     
+                </label>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="certificates.html">Cetificates</a></li>
+                <li><a href="#">Profiles</a></li>                        
+                <li><a href="news.html">News</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="https://www.facebook.com/profile.php?id=100080792927206" target="_blank">Get in Touch</a></li>
+               
+            </ul>
+        </div>
+        <nav class="sticky-nav">
+            <label for="check" class="checkbtn" onclick="openNAV()">
+                <i class="fas fa-bars"></i>                      
+            </label>
+            <img src="IMG/logo.png" alt="Logo" class="logo">
+            <button class="get-in-touch">
+                <a href="https://www.facebook.com/profile.php?id=100080792927206" target="_blank">Get In Touch
+                <span>→</span></a>
+            </button>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li>
+                    <a href="#">Services<i class="fas fa-angle-down"></i></a>
+                    <ul  class="nav-dropdown">
+                        <li><a href="certificates.html">Certificates</a></li>
+                        <li class="profile"><a href="#">Profiles</a></li>
+                    </ul>
+                </li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+            </ul>
+        </nav>
+    </section>
+    <section class="form-section">
+        <div class="form-container">
+            <div class="form-wrapper">
+                <div class="progressbar-container">
+                    <div class="progressbar">
+                        <div class="progress" id="progress"></div>
+                        <div class="progress-step progress-step-active" data-title="Personal" id="progress1"></div>
+                        <div class="progress-step" data-title="Address" id="progress2"></div>
+                        <div class="progress-step" data-title="Important Information" id="progress3"></div>
+                        <div class="progress-step" data-title="Identification" id="progress4"></div>
+                    </div>
+                </div>
+                <form class="form-flex" id="form1">
+                    <h6>
+                        <span>*</span>
+                        Please Make sure to provide your correct Contact 
+                        Number and Email Address.
+                    </h6>
+                    <div class="fill-up-list-container">
+                        <input type="text" class="fill-up-list" id="fname" required>
+                        <label for="fname" id="first" >First Name</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <input type="text" class="fill-up-list" id="lname" required>
+                        <label for="lname" id="last">Last Name</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <input type="text" class="fill-up-list" id="mname" required>
+                        <label for="mname" id="middle">Middle Name</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <select  class="fill-up-list" id="gender" required>
+                            <option></option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="lgbtq">LGBTQ+</option>
+                        </select>
+                        <label for="gender" id="gen">Gender</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <input type="date" class="fill-up-list" id="birthdate" required>
+                        <label for="birthdate" class="translated">Birth Date</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <input type="tel" class="fill-up-list" id="tel" required>
+                        <label for="tel">Contact</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <input type="email" class="fill-up-list" id="email" placeholder="" required>
+                        <label for="email" class="mail">Email</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <input type="text" class="fill-up-list" id="occupation" required>
+                        <label for="occupation">Occupation</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <select class="fill-up-list" id="religion" required>
+                            <option value=""></option>
+                            <option value="">Catholic</option>
+                            <option value="">Iglesia ni Cristo</option>
+                            <option value="">Foursquare</option>
+                            <option value="">Aglipay</option>
+                            <option value="">Baptist</option>
+                            <option value="">Alliance</option>
+                            <option value="">Baptist</option>
+                            <option value="">Jehovah's Witnesses</option>
+                            <option value="">Other</option>
+                        </select>
+                        <label for="religion" >Religion</label>
+                    </div>
+                    <div class="buttons-container">
+                        <input type="submit" value="Next" class="btn btn-next" onclick="formSec()"></input>
+                    </div>
+                </form>
+                <form class="form-flex" id="form2">
+                    <h6>
+                        <span>*</span>
+                        Please Make sure to provide your correct Contact 
+                        Number and Email Address.
+                    </h6>
+                    <div class="fill-up-list-container">
+                        <input type="text" class="fill-up-list" id="address" required>
+                        <label for="address" id="add" >Current Address</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <input type="text" class="fill-up-list" id="barangay" required>
+                        <label for="barangay" id="brgy">Barangay</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <input type="text" class="fill-up-list" id="municipality" required>
+                        <label for="municipality" id="muni">Municipality</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <input type="text" class="fill-up-list" id="province" required>
+                        <label for="province" id="prov">Province</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <input type="text" class="fill-up-list" id="zipcode" required>
+                        <label for="zipcode" class="zip">Zip Code</label>
+                    </div>
+                    <div class="buttons-container">
+                        <input type="submit" value="Next" class="btn btn-next" onclick="formThird()"></input>
+                        <a class="btn btn-prev" onclick="formFir()">Back</a>
+                    </div>
+                </form>
+                <form class="form-flex" id="form3">
+                    <h6>
+                        <span>*</span>
+                        Please Make sure to provide your correct Contact 
+                        Number and Email Address.
+                    </h6>
+                    <div class="fill-up-list-container">
+                        <h3>Emergency Contact</h3>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <input type="text" class="fill-up-list" id="efname" required>
+                        <label for="efname" id="efirst" >First Name</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <input type="text" class="fill-up-list" id="elname" required>
+                        <label for="elname" id="elast">Last Name</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <input type="text" class="fill-up-list" id="relation" required>
+                        <label for="relation" id="relate" >Relation</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <input type="tel" class="fill-up-list" id="etel" required>
+                        <label for="etel">Contact</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <h3>Health Information</h3><br>
+                        <span>(Enter "None" if no issues)</span>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <input type="text" class="fill-up-list" id="allergies" required>
+                        <label for="allergies">Allergies</label>
+                    </div>
+                    <div class="fill-up-list-container">
+                        <input type="text" class="fill-up-list" id="medical" required>
+                        <label for="medical">Medical Condition</label>
+                    </div>
+                    <div class="buttons-container">
+                        <input type="submit" value="Next" class="btn btn-next" onclick="formFour()"></input>
+                        <a class="btn btn-prev" onclick="formSec()">Back</a>
+                    </div>
+                </form>
+                <form class="form-flex" id="form4">
+                    <h6>
+                        <span>*</span>
+                        Please Make sure to provide your correct Contact 
+                        Number and Email Address.
+                    </h6>
+                    <div class="fill-up-list-container">
+                        <h3>2x2 Picture</h3>
+                    </div>
+                    <div class="x2-container">
+                        <img src="IMG/selfId.png" alt="IdHolder" id="self-pic">
+                        <label for="input-self" class="uploadbtn">Upload File</label>
+                        <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-self">
+                    </div>
+                    <div class="fill-up-list-container">
+                        <h3>Picture of Valid ID</h3>
+                    </div>
+                    <div class="id-container">
+                        <img src="IMG/IdHolder.jpg" alt="IdHolder" id="id-pic">
+                        <label for="input-file" class="uploadbtn">Upload File</label>
+                        <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+                    </div>
+                    <div class="buttons-container">
+                        <input type="submit" class="btn submit" value="Submit" onclick="openPopup()">
+                        <a class="btn btn-prev" onclick="formThird()">Back</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="popup-container" id="popup">
+        <div class="popup-flex">
+            <div class="popup" id="popel">
+                <div class="check-img">
+                    <i class="fa-solid fa-square-check"></i>
+                </div>
+                <h2>Thank You!</h2>
+                <p>Your details has been succesfully submitted. Please wait patiently while review the details.</p>
+                <button type="button" onclick="closePopup()">OK</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="semi-footer">
+        <div class="semi-footer-container">
+            <div class="semi-footer-flex">
+                <div class="semi-footer-content1">
+                    <div class="semi-footer-img-container">
+                        <div class="semi-footer-img-wrapper">
+                            <img src="IMG/logo.png" alt="">
+                        </div>
+                    </div>
+                    <div class="semi-footer-text-container">
+                        <p>
+                            A Barangay that is God-centered, competent, orderly, 
+                            honest, peaceful, credible, gender responsive and 
+                            abides the Code of Conduct.
+                        </p>
+                    </div>
+                </div>
+                <div class="semi-footer-content2">
+                    <div class="semi-footer-text2-container">
+                        <h6>More Pages</h6>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="certificates.html">Certificates</a></li>
+                            <li><a href="#">Profiles</a></li>
+                            <li><a href="news.html">Daily Updates</a></li>
+                            <li><a href="faq.html">FAQ</a></li>
+                        </ul>
+                    </div>
+                    <div class="semi-footer-text2-container">
+                        <h6>Peek & See</h6>
+                        <ul>
+                            <li><a href="images.html#housing">Housing</a></li>
+                            <li><a href="images.html#school">School</a></li>
+                            <li><a href="images.html#stores">Stores</a></li>
+                            <li><a href="images.html#farms">Farms</a></li>
+                            <li><a href="images.html#recreation">Recreation</a></li>
+                            <li><a href="images.html#nature">Nature</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <span>© 2023 | COPYRIGHT: BARANGAY MALONGON | DEVELOPED BY: CARL JOHN H. PACTAO-IN</span>
+        </div>
+    </footer>
+    
+
+
+    <script src="JS/script.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,109 @@
+
+.faq-section{
+    width: 100%;
+    padding: 40px 0 85px;
+}
+.accordion-wrapper{
+    width: 1200px;
+    margin-inline: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.accordion-container {
+    width: 600px;
+    height: auto;
+    padding-inline: 15px;
+}
+#accordion li{
+    list-style: none;
+    width: 100%;
+    background: #e9e8e8;
+    margin-bottom: 15px;
+
+}
+#accordion li label{
+    padding: 25px 37px;
+    display: flex;
+    align-items: center;
+    color: #3a3d3e;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+#accordion li label span{
+    margin-left: auto;
+    transform: rotate(0deg);
+    transition: all .15s;
+}
+.accordion-content{
+    padding: 0 15px 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.accordion-content p{
+    padding: 25px 37px;
+    background: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    color: #666;
+    font-weight: 500;
+}
+#accordion li label + input[type="radio"]{
+    display: none;
+}
+#accordion li label + input[type="radio"]:checked + .accordion-content{
+    max-height: 1200px;
+    padding-bottom: 15px;
+}
+#accordion li label + input[type="radio"]:checked + span{
+    transform: rotate(180deg);
+}
+.accordion-content ul{
+    padding-inline: 37px;
+    background-color: #fff;
+    padding-bottom: 10px;
+    
+}
+.accordion-content ul li{
+    margin-bottom: 0 !important;
+    font-size: 16px;
+    line-height: 26px;
+    font-family: 'Roboto', sans-serif;
+    color: #666;
+    font-weight: 400;
+    list-style: disc !important;
+    margin-left: 15px;
+    background-color: #fff !important;
+}
+
+
+@media (max-width:1200px){
+    .accordion-wrapper{
+        width: 960px;
+    }
+    .accordion-container {
+        width: 480px;
+    }
+}
+@media (max-width:960px){
+    .accordion-wrapper{
+        width: 720px;
+    }
+    .accordion-container {
+        width: 720px;
+    }
+}
+@media (max-width:760px){
+    .accordion-wrapper{
+        width: min(100vw , 540px);
+    }
+    .accordion-container {
+          width: min(100vw , 540px);
+    }
+}
+
+
+
+
+

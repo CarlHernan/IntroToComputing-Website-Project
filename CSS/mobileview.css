@@ -1,0 +1,227 @@
+@media (max-width: 500px){
+
+    body{
+        background-size: 280vw;
+    }
+
+    .logo {
+        margin: 30px 0 0 10vw;
+    }
+    .introduction {
+        margin: 5.5% 0 0 3%;
+        width: 90%;
+    }
+    .introduction h1 {
+        font-weight: 600;
+        font-size: 40px;
+        color: #FFFFFF;
+        letter-spacing: -0.3px;
+    }
+    .introduction p {
+        font-size: 18px;
+    }
+
+    .introduction p.description{
+        font-size: 20px;
+    }
+
+    .learn-more  {
+        padding: 15px 35px;
+        margin-top: 20px;
+    }
+    
+    .box-wrapper {
+        margin-top: 53%;
+        width: 95%;
+    }
+
+    .box-container {
+        width: calc(50% - 10px);
+    }
+    .checkbtn {
+        font-size: 32px;
+        top: 5%;
+        z-index: 1100;
+    }
+    .checkbtnX{
+        left: -70px;
+    }
+    
+    .sticky-nav img.logo {
+        width: 15%;
+        margin: 7px 0 5px 5vw;
+    }
+    .mobile-nav ul{
+        width: 50%;
+        padding-top: 20px;
+        z-index: 1101;
+    }
+    #check:checked ~ ul {
+        left: 50vw;
+    }
+    .about{
+        margin-top: 3vh;
+        height: 1400px;
+    }
+    .about-img{
+        height: 60vh;
+        margin: 8vh 7vw 0 ;
+    }
+    .about h2{
+        font-size: 30px;
+    }
+    .about span{
+        font-weight: 400;
+    }
+    .about-container{
+        width: 90vw;
+        margin: 14% 5vw 0;
+    }
+    .tabbed-menu {
+        margin: 2% 5% 0;
+        width: 90%;
+        height: 450px;
+    }
+    .tabbed-menu button{
+  
+        font-size: 12px;
+    }
+
+    .content-buttom{
+        flex-wrap: wrap;
+        margin-top: 5%;
+    }
+    .content-contact{
+        margin-right: 0;
+        width: 100%;
+    }
+    .content-captain{
+        width: 100%;
+    }
+    .btn-box button{
+        padding: 4vw 3vw;
+        margin: 8% 0 2%;
+    }
+    .contact-us{
+        padding: 8px 30px 12px;
+        font-weight: bolder;
+    }
+    .waves{
+        bottom: -8%;
+    }
+    .section-3{
+        padding-inline:6vw ;
+        padding-top: 30%;
+    }
+
+    .content-text{
+        width: 105%;
+    }
+    .sec3-logo2-container{
+        display: none;
+    }
+    .sec3-img-container img{
+        width: 86vw !important;
+    }
+    .sec3-map-container img{
+        width: 80vw;
+    }
+    .sec3-map-container{
+        left: 7%;
+        top: 8%;
+    }
+    .sec3-text-container{
+        margin-top: 5%;
+    }
+    .sec3-text-container h2{
+        font-size:30px;
+    }
+
+
+    .box-wrapper2{
+        width: 86vw;
+    }
+    .icon-text-container{
+        width: calc(100% - 10%);
+    }
+
+    .sec5-container{
+        width: 350px;
+        position: relative;
+    }
+    .sec5-slides{
+        width: 1080px;
+    }
+    #slide-1{
+        transform: translateX(-1.5%);
+    }
+    .mslide-btn{
+        display: none;
+    }
+    .cslide-btn{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 40%;
+        opacity: 1;
+    }
+    #prevbtn{
+        left: 0;
+    }
+    #nextbtn{
+        right: 0;
+    }
+    .hide2{
+        display: none;
+    }
+
+
+
+    .section-6-container{
+        padding-inline: 20px;
+    }
+   
+    .sec6-text-wrapper{
+        padding-inline: 0px;
+    }
+    .sec6-text-wrapper h2 {
+        font-size: 35px;
+    }
+}
+
+@media (max-width: 376px){
+    body{
+        background-size: 320vw;
+    }
+    .checkbtn {
+        font-size: 30px;
+    }
+    .checkbtnX{
+        left: -60px;
+    }
+    .introduction h1{
+        font-size: 50px;
+    }
+    .introduction p.description{
+        font-size: 18px;
+    }
+    .box-wrapper {
+        margin-top: 40%;
+    }
+    .about-img {
+        margin:4vh 7vw 0 ;
+    }
+    .waves{
+        bottom: -6%;
+    }
+    .btn-box button{
+        padding: 4vw 2vw;
+    }
+    .text1 h6{
+        font-size: 14px;
+    }
+    .text2 h2{
+        font-size: 38px;
+    }
+}
+
